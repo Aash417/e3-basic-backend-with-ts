@@ -27,4 +27,4 @@ const todoSchema = new Schema<todoType>(
 	{ timestamps: true }
 );
 
-export const Todo = model('Todo', todoSchema);
+export const Todo = model<todoType>('Todo', todoSchema);

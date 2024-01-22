@@ -15,4 +15,4 @@ const subTodoSchema = new Schema<subTodoType>(
 	{ timestamps: true }
 );
 
-export const SubTodo = model('SubTodo', subTodoSchema);
+export const SubTodo = model<subTodoType>('SubTodo', subTodoSchema);
